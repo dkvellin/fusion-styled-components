@@ -12,6 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "postinstall": "git subtree add --prefix src/fusion https://github.com/areai51/fusion.git styled-components"
+    "postinstall": "git subtree add --prefix src/fusion https://github.com/areai51/fusion.git styled-components",
+    "push-styled-fusion": "git subtree add --prefix src/fusion https://github.com/areai51/fusion.git styled-components"
   }
 }
