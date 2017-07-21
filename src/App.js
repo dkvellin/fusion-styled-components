@@ -1,10 +1,11 @@
 import React from 'react';
+import { AvatarSC } from './fusion';
 
 class App extends React.Component {
   render() {
     return(
       <div>
-        <h2>Hello</h2>
+        <AvatarSC />
       </div>
     );
   }
