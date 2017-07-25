@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner } from './fusion';
+import { Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -21,6 +21,7 @@ class App extends React.Component {
             <Button disabled={false} onClick={() => console.log("Click Event")}>secondaryTheme Button</Button>
           </ThemeProvider>
           <Heading tag="h2" href="#">Heading</Heading>
+          <Link href="http://google.com">Google Link</Link>
           <Logo width={200} />
           <Heading>Heading<Badge>Badge</Badge></Heading>
           <Banner><Heading tag="h1">Banner Title</Heading></Banner>
