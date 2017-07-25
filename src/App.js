@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
+import { Tooltip, Text, Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -9,6 +9,7 @@ class App extends React.Component {
     return(
       <ThemeProvider theme={primaryTheme}>
         <div>
+
           <Alert type='info'>Success</Alert>
           <Avatar
             picUrl="https://images.unsplash.com/photo-1422065649003-cf6684a31468"
@@ -40,7 +41,16 @@ class App extends React.Component {
           </Code>
           <Row>
             <Column>Column 1</Column>
-            <Column>Column 2</Column>
+            <Column>
+              <Tooltip text='Hello'>
+                <Text
+                  align="center"
+                  weight="bold"
+                  size={20}
+                  children="Hello"
+                />
+              </Tooltip>
+            </Column>
           </Row>
           <Panel color='blue'>
         	<PanelHeader
