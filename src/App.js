@@ -70,7 +70,7 @@ class App extends React.Component {
         </Panel>
           <Heading tag="h2" href="#">Heading</Heading>
           <Link href="http://google.com">Google Link</Link>
-          <Blockquote>"Lors asdjfkl asdfjlw llspwuh"</Blockquote>
+          <Blockquote align="right">"Lors asdjfkl asdfjlw llspwuh"</Blockquote>
           <Logo width={200} />
           <Card width={30}><BackgroundImage size="cover" position="center"/><Heading>Card Title</Heading></Card>
           <Heading>Heading<Badge bg="blue" color="white">Badge</Badge></Heading>
