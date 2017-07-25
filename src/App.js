@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
+import { Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -22,7 +22,16 @@ class App extends React.Component {
               <Button disabled={false} onClick={() => console.log("Click Event")}>secondaryTheme Button</Button>
             </div>
           </ThemeProvider>
-          <Code children={"<html><body></body></html>"}></Code>
+          <Code children="
+            <html>
+              <body></body>
+            </html>
+          ">
+          </Code>
+          <Row>
+            <Column>Column 1</Column>
+            <Column>Column 2</Column>
+          </Row>
           <Heading tag="h2" href="#">Heading</Heading>
           <Link href="http://google.com">Google Link</Link>
           <Blockquote>"Lors asdjfkl asdfjlw llspwuh"</Blockquote>
