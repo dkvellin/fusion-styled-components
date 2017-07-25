@@ -1,5 +1,5 @@
 import React from 'react';
-import { Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
+import { Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -15,6 +15,9 @@ class App extends React.Component {
             alt="JESUS Saves"
             width={40}
             height={400}
+          />
+          <Progress
+          	value={1/3}
           />
           <Button disabled={false} onClick={() => console.log("Click Event")}>Normal</Button>
           <ThemeProvider theme={secondaryTheme}>
