@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
+import { Text, Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -15,6 +15,12 @@ class App extends React.Component {
             alt="JESUS Saves"
             width={40}
             height={400}
+          />
+          <Text
+          	align="center"
+          	weight="bold"
+            size={20}
+          	children="Hello"
           />
           <Progress
           	value={1/3}
