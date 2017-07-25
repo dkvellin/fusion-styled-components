@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, Text, Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
+import { Truncate, Tooltip, Text, Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -11,6 +11,11 @@ class App extends React.Component {
         <div>
 
           <Alert type='info'>Success</Alert>
+          <Card width={30}>
+            <Truncate>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </Truncate>
+          </Card>
           <Avatar
             picUrl="https://images.unsplash.com/photo-1422065649003-cf6684a31468"
             alt="JESUS Saves"
