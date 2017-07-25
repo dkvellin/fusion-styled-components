@@ -73,7 +73,7 @@ class App extends React.Component {
           <Blockquote>"Lors asdjfkl asdfjlw llspwuh"</Blockquote>
           <Logo width={200} />
           <Card width={30}><BackgroundImage size="cover" position="center"/><Heading>Card Title</Heading></Card>
-          <Heading>Heading<Badge>Badge</Badge></Heading>
+          <Heading>Heading<Badge bg="blue" color="white">Badge</Badge></Heading>
           <Banner><Heading tag="h1">Banner Title</Heading></Banner>
           <Slider name="will" min={1} max={10} defaultValue={1} disabled={false} onChange={() => console.log("Change Event")} />
           <BackgroundImage size="cover" position="center"/>
