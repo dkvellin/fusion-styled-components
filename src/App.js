@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote } from './fusion';
+import { Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card } from './fusion';
 import { ThemeProvider } from 'styled-components';
 import { primaryTheme, secondaryTheme } from './styles';
 
@@ -24,6 +24,7 @@ class App extends React.Component {
           <Link href="http://google.com">Google Link</Link>
           <Blockquote>"Lors asdjfkl asdfjlw llspwuh"</Blockquote>
           <Logo width={200} />
+          <Card width={30}><BackgroundImage size="cover" position="center"/><Heading>Card Title</Heading></Card>
           <Heading>Heading<Badge>Badge</Badge></Heading>
           <Banner><Heading tag="h1">Banner Title</Heading></Banner>
           <Slider name="will" min={1} max={10} defaultValue={1} disabled={false} onChange={() => console.log("Change Event")} />
