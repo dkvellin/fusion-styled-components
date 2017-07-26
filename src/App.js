@@ -1,7 +1,8 @@
 import React from 'react';
 import { Truncate, Tooltip, Text, Progress, Panel, PanelFooter, PanelHeader, Row, Column, Alert, Avatar, Button, Logo, Slider, Heading, BackgroundImage, Badge, Banner, Link, Blockquote, Card, Code } from './fusion';
 import { ThemeProvider } from 'styled-components';
-import { primaryTheme, secondaryTheme } from './styles';
+import { primaryTheme, secondaryTheme } from './theme/themes';
+import './theme/globalStyles';
 
 class App extends React.Component {
   render() {
