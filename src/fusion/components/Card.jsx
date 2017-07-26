@@ -9,6 +9,9 @@ const Card = styled.div.attrs({
   border-radius: 4px;
   width: ${props => props.width}%;
   background-color: #fff;
+  >h2 {
+    margin: 15px;
+  }
 `;
 
 /* Props Check */
@@ -16,7 +19,7 @@ Card.propTypes = {
   /**
    * Card Width
   */
-  width: PropTypes.string
+  width: PropTypes.number
 };
 
 /* Deafult Props */

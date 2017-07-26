@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+// ${props => props.center && 'text-align: center;' || props.left && 'text-align: left;' || props.right && 'text-align: right;'}
+
 const Text = styled.p`
   text-align: ${props => props.align};
   font-weight: ${props => props.weight};
