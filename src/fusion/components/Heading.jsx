@@ -8,21 +8,23 @@ const Heading = styled(
   ({ tag, children, ...props }) => el(tag, props, children)
 )`
   color: black;
+  text-align: ${props => props.align}
 `;
 
 Heading.propTypes = {
   /**
-   * tag
+   * Available Tags
   */
   tag: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6"]),
   /**
-   * title
+   * Alignment
   */
-  title: PropTypes.string,
+  align: PropTypes.string,
 };
 
 Heading.defaultProps = {
   tag: 'h2',
+  align: 'left'
 };
 
 export default Heading;

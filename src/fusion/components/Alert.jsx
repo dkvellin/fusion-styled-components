@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Alert = styled.div.attrs({
-  	bg: props => {
+  	type: props => {
       if(props.type === 'success') {
         return 'green'
       }
@@ -32,9 +32,8 @@ const Alert = styled.div.attrs({
     },
 
 })`
-    background: ${props => props.bg};
-    padding: 5px;
-    margin: 5px;
+    background: ${props => props.type};
+    padding: 10px;
     color: ${props => props.color};
 `;
 

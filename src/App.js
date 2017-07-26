@@ -10,7 +10,6 @@ class App extends React.Component {
     return(
       <ThemeProvider theme={primaryTheme}>
         <div>
-
           <Alert type='success'>Success</Alert>
           <Card width={30}>
             <Truncate>
@@ -73,7 +72,7 @@ class App extends React.Component {
           <Link href="http://google.com">Google Link</Link>
           <Blockquote align="right">"Lors asdjfkl asdfjlw llspwuh"</Blockquote>
           <Logo width={200} />
-          <Card width={30}><BackgroundImage size="cover" position="center"/><Heading>Card Title</Heading></Card>
+          <Card width={20}><BackgroundImage size="cover" position="center"/><Heading align="center">Card Title</Heading></Card>
           <Heading>Heading<Badge bg="blue" color="white">Badge</Badge></Heading>
           <Banner><Heading tag="h1">Banner Title</Heading></Banner>
           <Slider name="will" min={1} max={10} defaultValue={1} disabled={false} onChange={() => console.log("Change Event")} />

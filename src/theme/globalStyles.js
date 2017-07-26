@@ -7,5 +7,7 @@ injectGlobal`
   /* Styles */
   body {
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
   }
 `;

@@ -9,7 +9,7 @@ const Card = styled.div.attrs({
   border-radius: 4px;
   width: ${props => props.width}%;
   background-color: #fff;
-  >h2 {
+  >h2,p {
     margin: 15px;
   }
 `;
