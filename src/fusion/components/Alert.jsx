@@ -1,40 +1,63 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+const AlertIcon = styled.i`
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+`;
+
+const AlertMessage = styled.span`
+  font-size: 14px;
+  color: rgba(0,0,0,.85);
+  display: block;
+  margin-bottom: 4px;
+`;
+
+const AlertDescription = styled.span`
+  display: block;
+  font-size: 12px;
+  line-height: 21px;
+`;
 
 const Alert = styled.div.attrs({
   	type: props => {
       if(props.type === 'success') {
-        return 'green'
+        return '#ebf8f2'
       }
       if(props.type === 'info') {
-        return 'blue'
+        return '#ecf6fd'
       }
       if(props.type === 'warning') {
-        return 'yellow'
+        return '#fffaeb'
       }
       if(props.type === 'error') {
-        return 'red'
+        return '#fef0ef'
       }
     },
-    color: props => {
+    border: props => {
       if(props.type === 'success') {
-        return 'white'
+        return '#cfefdf'
       }
       if(props.type === 'info') {
-        return 'white'
+        return '#d2eafb'
       }
       if(props.type === 'warning') {
-        return 'black'
+        return '#fff3cf'
       }
       if(props.type === 'error') {
-        return 'white'
+        return '#fcdbd9'
       }
     },
 
 })`
     background: ${props => props.type};
     padding: 10px;
-    color: ${props => props.color};
+    color: rgba(0,0,0,.65);
+    border: 1px solid ${props => props.border};
 `;
 
 /* Props Check */
@@ -50,4 +73,10 @@ Alert.defaultProps = {
   type: "success",
 };
 
-export default Alert;
+export default (props) => (
+  <Alert type={props.type}>
+    <AlertIcon/>
+    <AlertMessage children={props.message}/>
+    <AlertDescription children={props.description}/>
+  </Alert>
+);
